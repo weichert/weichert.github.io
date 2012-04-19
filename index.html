@@ -6,7 +6,7 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="css/default.css" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Kreon:400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Kreon:300' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.jscroll.min.js"></script>
   <script type="text/javascript">
@@ -29,16 +29,21 @@
 <div id="content-scrollable">
   <div id="who_i_am" class="vcard">
     <h1 class="fn">Enno Weichert</h1>
-    <p>
-      <a class="email" href="mailto:enno.weichert@googlemail.com">enno.weichert@googlemail.com</a><br/>
-      <a class="tel" href="tel:+49.1578.8476548">+49.1578.8476548</a><br/>
-      <a class="adr" href="geo:53.347913,7.229822;u=35">
-        <span class="street-address">Wykhoffweg 52</span>
-        <span class="postal-code">26725</span> <span class="locality">Emden</span><br/>
-        <span class="country-name">Germany</span>
-      </a><br/>
-      <time class="bday">1978-02-09</time>
-    </p>
+    <div id="card-photo">
+      <img class="photo" src="img/photo.png" alt="a photo of me"/>
+    </div>
+    <dl id="card-text">
+      <dt>email</dt>
+        <dd><a class="email" href="mailto:enno.weichert@googlemail.com">enno.weichert@googlemail.com</a></dd>
+      <dt>phone</dt>
+        <dd><a class="tel" href="tel:+49.1578.8476548">+49 1578 8476548</a></dd>
+      <dt>address</dt>
+        <dd><a class="adr" href="geo:53.347913,7.229822;u=35">
+        <span class="street-address">Wykhoffweg 52</span>, <span class="postal-code">26725</span> <span class="locality">Emden</span>, <span class="country-name">Germany</span></dd>
+      </a>
+      <dt>birthday</dt>
+        <dd><time class="bday" datetime="1978-02-09">February 9th 1978</time></dd>
+    </dl>
   </div>
 
   <div id="what_i_can_do">
@@ -115,12 +120,19 @@
                  Abitur
     </p>
   </div>
+  
   <div id="what_i_am_looking_for">
     <h2>what i am looking for</h2>
   </div>
+  
   <div id="how_we_team_up">
     <h2>how we team up</h2>
   </div>
+
+  <h2>meta</h2>
+  <p>
+    I was using the following technologies to create this page:
+  </p>
 </div>
 
 <div id="content-static">

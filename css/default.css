@@ -12,9 +12,6 @@ body {
   width: 560px;
 }
 
-#content {
-}
-
 a {
   text-decoration:none;
   font-weight:600;
@@ -23,7 +20,7 @@ a {
 
 h1, h2, h3, h4 {
   font-family: "Kreon", serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #111;
 }
 
@@ -70,6 +67,26 @@ h1, h2 {
 #content-scrollable a:hover {
   text-decoration:underline;
   color: #0031ea;
+}
+
+#card-photo {
+  width:96px;
+  height:96px;
+  padding-left: 12px;
+  padding-right:12px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#card-text{ display: table-cell; }
+
+#card-text dt {
+    float: left;
+    clear: left;
+}
+
+#card-text dd {
+  margin: 0 0 0 72px;
 }
 
 #what_i_can_do h2 {
