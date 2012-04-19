@@ -5,8 +5,10 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <link rel="icon" type="image/x-icon" href="img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Kreon:400' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-  <script type="text/javascript" src="public/js/jquery.jscroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.jscroll.min.js"></script>
   <script type="text/javascript">
     jQuery(document).ready(function($) {
       $(".smooth-anchor").click(function(event){    
@@ -22,23 +24,127 @@
 
 <body>
 
-<div id="content">
+<div class="hidden"><a href="#navigation" class="smooth-anchor">Navigation</a></div>
+
+<div id="content-scrollable">
+  <div id="who_i_am" class="vcard">
+    <h1 class="fn">Enno Weichert</h1>
+    <p>
+      <a class="email" href="mailto:enno.weichert@googlemail.com">enno.weichert@googlemail.com</a><br/>
+      <a class="tel" href="tel:+49.1578.8476548">+49.1578.8476548</a><br/>
+      <a class="adr" href="geo:53.347913,7.229822;u=35">
+        <span class="street-address">Wykhoffweg 52</span>
+        <span class="postal-code">26725</span> <span class="locality">Emden</span><br/>
+        <span class="country-name">Germany</span>
+      </a><br/>
+      <time class="bday">1978-02-09</time>
+    </p>
+  </div>
+
+  <div id="what_i_can_do">
+    <h2>what i can do</h2>
+    <p>
+    Fremdsprachen
+    Englisch in Wort und Schrift fließend
+    Softwarekenntnisse
+    Installieren, Verwalten und Nutzen von:
+    Debian GNU/Linux und Ubuntu mit langjähriger Erfahrung
+    Red Hat und Derivate mit Erfahrung
+    Windows XP bis 7 mit Erfahrung
+    Windows Server 2008 mit Grundkenntnissen
+    Apache HTTP Server mit Erfahrung
+    MySQL mit Erfahrung
+    Trac und Redmine Bugtracker mit Erfahrung
+    Subversion und Git Versionsverwaltung mit Erfahrung
+    Gnu Emacs, Vi und Eclipse mit Erfahrung
+    Programmiersprachen
+    Objektorientierte Programmierung mit langjähriger Erfahrung
+    (X)HTML, CSS, XML und SGML mit Erfahrung
+    Bash, Visual Basic, PHP und Javascript mit Erfahrung
+    C, C++ und Java mit soliden Grundkenntnissen
+    Cake und Zend Framework mit Erfahrung
+    Jquery und Dojo Toolkit mit Grundkenntnissen
+    Sonstige Kenntnisse
+    Getting Things Done Workflow mit langjähriger Erfahrung
+    Solide handwerkliche Grundkenntnisse (Do-It-Yourself)
+    Erfahrung im Verhandeln und Führen von Verkaufsgesprächen
+    Langjährige Erfahrung im Umgang mit zwischenmenschlichen
+    Konflikten
+    Interessen
+    HTML5 und Mobile Anwendungen
+    Serverseitiges Javascript
+    Test-/Behavior Driven Development, Continuous Integration
+    Sicherheit und Ergonomie in IT-Systemen
+    Kommunikation und Kommunikationspsychologie
+    Lehren und lernen
+    Musik (Glenn Gould bis Mastodon)
+    Gitarre spielen
+    Geschichte, Kultur und Zeitgeschehen weltweit
+    Kochen weltweiter Rezepte
+    </p>
+  </div>
+  <div id="what_i_did_in_the_past">
+    <h2>what i did in the past</h2>
+    <p>
+    Februar 2012 bis April 2012 Selbständige Entwicklung einer Javascript-basierten
+                                HTML5 Anwendung zur Selbstorganisation
+    2010 bis Januar 2012 CVU Büro und Technik Berlin GmbH
+                         Entwicklung einer Webseite für mobile Endgeräte
+                          MD Schulung & Beratung GmbH
+                         Umschulung zum Fachinformatiker Anwendungsentwicklung
+                        Ergebnislos, da keine Ausbildungsinhalte vermittelt wurden
+    2010 bis Januar 2012
+    2007 bis 2010 Selbständige Weiterbildung in den Bereichen
+                  Informationstechnologie
+                 Kommunikationspsychologie
+                Informationsmanagement und Organisation
+    2004 bis 2005 Werkstätten der Arbeiterwohlfahrt Dortmund GmbH
+                  Ehrenamtlicher Helfer in der Schreinerei
+    1998 bis 2006 Wechselnde Beschäftigungen als:
+                  Programmierer
+                 Produktionshelfer
+                Landwirtschaftlicher Helfer
+               Außendienstmitarbeiter, Fundraising
+    1998 bis 2001 Universität Dortmund
+                  Informatikstudium (abgebrochen)
+    1997 bis 1998 Albert-Schweitzer-Klinik Northeim
+                 Zivildienst in der Verwaltung
+    1996 bis 1997 Orgaplan GmbH
+                 Programmierer
+    1994 bis 1997 Fachgymnasium Wirtschaft BBS 1 Northeim
+                 Abitur
+    </p>
+  </div>
+  <div id="what_i_am_looking_for">
+    <h2>what i am looking for</h2>
+  </div>
+  <div id="how_we_team_up">
+    <h2>how we team up</h2>
+  </div>
+</div>
 
 <div id="content-static">
+  <div id="navigation" class="hidden">Navigation:</div>
   <ul>
-    <li><a href="#part1" class="smooth-anchor"><img src="img/part1.png" title="what we should have in common" /></a></li>
-    <li><a href="#part2" class="smooth-anchor"><img src="img/part2.png" title="what i can do" /></a></li>
-    <li><a href="#part3" class="smooth-anchor"><img src="img/part3.png" title="what i am looking for" /></a></li>
-    <li><a href="#part4" class="smooth-anchor"><img src="img/part4.png" title="how we team up" /></a></li>
+    <li><a href="#who_i_am" class="smooth-anchor">
+      <img src="img/who_i_am.png" title="who i am" alt="who i am" />
+    </a></li>
+    <li><a href="#what_i_can_do" class="smooth-anchor">
+      <img src="img/what_i_can_do.png" title="what i can do" alt="what i can do" />
+    </a></li>
+    <li><a href="#what_i_did_in_the_past" class="smooth-anchor">
+      <img src="img/what_i_did_in_the_past.png" title="what i did in the past" alt="what i did in the past" />
+    </a></li>
+    <li><a href="#what_i_am_looking_for" class="smooth-anchor">
+      <img src="img/what_i_am_looking_for.png" title="what i am looking for" alt="what i am looking for" />
+    </a></li>
+    <li><a href="#how_we_team_up" class="smooth-anchor">
+      <img src="img/how_we_team_up.png" title="how we team up" alt="how we team up" />
+    </a></li>
   </ul>
 </div>
 
-<div id="content-scrollable">
-  <header>
-    <h1>Enno Weichert</h1>
-  </header>
-
-  <div id="part1">
+<!--   <div >
     <h2>what we should have in common</h2>
     <p>
     We both like to think out of the box to find a <a href="http://garfieldminusgarfield.net/">different</a> perspective. We also like straightforward and simple solutions. We do not imitate <a href="http://www.forbes.com/lists/">others</a>, instead we try to understand and extend.
@@ -93,8 +199,7 @@
 
   <div id="footer">
     is it <a href="http://validator.w3.org/unicorn/check?ucn_uri=brillenfux.github.com&amp;tests=markup-validator&amp;tests=css-validator&amp;ucn_task=custom&amp;warning=2&amp;profile=css3&amp;usermedium=screen">valid</a>?
-  </div>
+  </div> -->
 
-</div></div>
 </body>
 </html>

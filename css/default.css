@@ -1,68 +1,42 @@
+.hidden {
+  display: none;
+}
+
 body {
+  font-family: "Open Sans", sans-serif;
+  font-weight:300;
+  font-size: 14px;
   background: #fff;
+  position: relative;
+  margin: 0px auto 20px;
+  width: 560px;
 }
 
 #content {
-  position: relative;
-  margin: 0px auto 20px;
-  width: 760px;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
 }
 
 a {
   text-decoration:none;
-  font-weight:bold;
+  font-weight:600;
   color: inherit;
 }
 
 h1, h2, h3, h4 {
-  font-family: georgia, times, serif;
-  font-weight: normal;
-  color: #333;
+  font-family: "Kreon", serif;
+  font-weight: 400;
+  color: #111;
 }
 
-h1 {
-  font-size:48px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-h2 { font-size:24px;}
-
-h3 { font-size:20px;}
-
-h4 { font-size:18px;}
-
-header {
-  text-align:center;
-}
-
-header h2 {
-  color: #666;
-  font-style: italic;
-  font-size: 20px;
-  margin-top:0px;
-  margin-bottom:0px;
-}
-
-header p {
-  margin-top:12px;
-  margin-bottom:36px;
-}
-
-header a {
-  font-size:11px;
-  font-weight:normal;
-  font-family: georgia, times, serif;
-  font-style: italic;
+h1, h2 { 
+  font-size:185%;
+  text-transform:lowercase;
 }
 
 #content-static {
   background: rgba(255, 255, 255, 0.9);
   position:fixed;
   top: 0px;
-  width: 760px;
+  width: 560px;
   clear:left;
 }
 
@@ -75,7 +49,7 @@ header a {
 #content-static ul li {
   float: left;
   margin: 24px 0px;
-  width: 25%;
+  width: 20%;
   text-align: center;
 }
 
@@ -84,7 +58,7 @@ header a {
 }
 
 #content-scrollable {
-  margin-top: 104px;
+  margin-top: 85px;
   clear: left;
 }
 
@@ -98,24 +72,23 @@ header a {
   color: #0031ea;
 }
 
-#part1 h2 {
-  color: #0197fd;
-}
-
-#part2 h2 {
+#what_i_can_do h2 {
   color: #00cc00;
 }
 
-#part3 h2 {
+#what_i_did_in_the_past h2 {
+  color: #0197fd;
+}
+
+#what_i_am_looking_for h2 {
   color: #fdca01;
 }
 
-#part4 h2 {
+#how_we_team_up h2 {
   color: #ff0036;
 }
 
 #footer {
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 10px;
   text-align: center;
   color:#666;
