@@ -61,6 +61,7 @@ h1, h2 {
 
 #navigation-static a img {
   border-style: none;
+  /*display: block;*/
 }
 
 #content-scrollable {
@@ -79,23 +80,34 @@ h1, h2 {
 }
 
 #card-photo {
-  width:96px;
-  height:96px;
+  width: 96px;
+  height: 96px;
   padding-left: 12px;
   padding-right:12px;
   display: table-cell;
   vertical-align: middle;
 }
 
-#card-text{ display: table-cell; }
+#card-photo img {
+  display: block;
+}
+
+#card-text{ 
+  display: table-cell; 
+  vertical-align: middle;
+}
 
 #card-text dt {
     float: left;
     clear: left;
 }
 
+#card-text dt:after {
+  content: ":";
+}
+
 #card-text dd {
-  margin: 0 0 0 72px;
+  margin: 0 0 0 80px;
 }
 
 #what_i_can_do h2 {
