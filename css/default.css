@@ -165,3 +165,7 @@ h2 {
 #how_we_team_up h2 {
   color: #ff0036;
 }
+
+#meta, #meta h2 {
+  color: #888
+}
