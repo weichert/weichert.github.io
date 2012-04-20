@@ -5,11 +5,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight:300;
-  font-size: 14px;
+  font-size: .9em;
   background: #fff;
   position: relative;
   margin: 0px auto 20px;
-  width: 560px;
+  max-width: 560px;
 }
 
 a {
