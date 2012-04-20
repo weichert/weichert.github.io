@@ -8,9 +8,9 @@
   <link rel="stylesheet" type="text/css" href="css/default.css" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Kreon:300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.jscroll.min.js"></script>
-  <script type="text/javascript">
+  <script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <script type="application/javascript" src="js/jquery.jscroll.min.js"></script>
+  <script type="application/javascript">
     jQuery(document).ready(function($) {
       $(".smooth-anchor").click(function(event){    
         event.preventDefault();
@@ -25,6 +25,7 @@
 <a class="hidden" href="#navigation">Navigation</a>
 
 <div id="content-scrollable">
+
   <div id="who_i_am" class="vcard">
     <h1 class="fn">Enno Weichert</h1>
     <div id="card-photo">
@@ -86,6 +87,7 @@
     Kochen weltweiter Rezepte
     </p>
   </div>
+
   <div id="what_i_did_in_the_past">
     <h2>what i did in the past</h2>
     <p>
@@ -127,13 +129,31 @@
     <h2>how we team up</h2>
   </div>
 
-  <h2>meta</h2>
-  <p>
-    I was using the following technologies to create this page:
-  </p>
+  <div class="content-section">
+    <h2>meta</h2>
+    <p>
+      I was using the following technologies to create this page:
+    </p>
+    <dl>
+      <dt><a href="http://git-scm.com/">git</a></dt>
+        <dd>I am using git for a lot of other stuff already so it just made a lot of sense</dd>
+      <dt><a href="http://github.com/resmo/git-ftp">git-ftp</a></dt>
+        <dd>The nice thing about this tool, other than working with git, is that it uploads only the changed files.</dd>
+      <dt><a href="http://www.w3.org/TR/html5/">HTML5</a></dt>
+        <dd>A lot of it might actually be HTML 4 but I strife to make it better. And with better I usually mean better semantics and not so much better graphics.</dd>
+      <dt><a href="http://www.w3.org/TR/CSS/">CSS3</a></dt>
+        <dd>Because this site relies heavily on semanticization instead of graphical design any layout and design has to come from Cascading Stylesheets. There are still loopholes however as I am still learning how to do this better.</dd>
+      <dt><a href="http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm">Javascript</a></dt>
+        <dd>Although my focus in programming right now lies on Javascript I tried to use none in this site. It did not work out however: I still need a jQuery scroll script for the static header. But I did not do anything myself here.</dt>
+      <dt><a href="http://inkscape.org/">Inkscape</a></dt>
+        <dd>The workflow is crappy but it gets the job done. I am usually using it just for vector-based icons. The overall goal here however is to get rid of the bitmaps for the most part.
+      <dt><a href="http://www.sublimetext.com/">Sublime Text 2</a></dt>
+        <dd>This is actually a test-run and it might turn out that I still like Vim. I am usually doing everything else with Vim.</dd>
+    </dl>
+  </div>
 </div>
 
-<div id="content-static">
+<div id="navigation-static">
   <div id="navigation" class="hidden">Navigation:</div>
   <ul>
     <li><a href="#who_i_am" class="smooth-anchor">
