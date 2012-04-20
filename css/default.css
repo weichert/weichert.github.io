@@ -171,3 +171,10 @@ h2 {
 #meta, #meta h2 {
   color: #888
 }
+
+#debug, #debug h2 {
+  color: #eee;
+  background: #111;
+  border-left: 5px solid #111;
+  border-right: 5px solid #111;
+}
