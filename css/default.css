@@ -1,3 +1,6 @@
+/* 
+ * General
+ */
 body {
   font-family: "Open Sans", sans-serif;
   font-weight:300;
@@ -10,7 +13,7 @@ body {
 
 a {
   text-decoration:none;
-  font-weight:600;
+  font-weight:400;
   color: inherit;
 }
 
@@ -18,26 +21,29 @@ h1, h2, h3, h4 {
   font-family: "Kreon", serif;
   font-weight: 300;
   color: #111;
-}
-
-h1, h2 { 
-  font-size:185%;
   text-transform:lowercase;
 }
 
+h1 { 
+  font-size:200%;
+}
+
+h2 { 
+  font-size:185%;
+}
+
+/*
+ * Classes
+ */
 .hidden {
   display: none;
 }
 
-.content-section dt {
-  margin-left: 12px;
-  margin-top: .6em;
-}
 
-.content-section dd {
-  margin-left: 24px;
-}
 
+/* 
+ * Navigation section
+ */
 #navigation-static {
   background: rgba(255, 255, 255, 0.9);
   position:fixed;
@@ -64,6 +70,11 @@ h1, h2 {
   /*display: block;*/
 }
 
+
+
+/* 
+ * General content section 
+ */
 #content-scrollable {
   margin-top: 85px;
   clear: left;
@@ -74,11 +85,39 @@ h1, h2 {
   padding-left: 12px;
 }
 
+#content-scrollable dt {
+  margin-left: 12px;
+  margin-top: .6em;
+}
+
+#content-scrollable dd {
+  margin-left: 24px;
+}
+
+#content-scrollable ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+#content-scrollable li:before {
+  content: '\2013\a0';
+}
+
+#content-scrollable li {
+  margin: 0px;
+}
+
 #content-scrollable a:hover {
   text-decoration:underline;
   color: #0031ea;
 }
 
+
+
+/* 
+ * Specific content sections 
+ */
 #card-photo {
   width: 96px;
   height: 96px;
@@ -98,8 +137,9 @@ h1, h2 {
 }
 
 #card-text dt {
-    float: left;
-    clear: left;
+  margin: 0px;
+  float: left;
+  clear: left;
 }
 
 #card-text dt:after {
