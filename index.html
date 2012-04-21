@@ -1,3 +1,12 @@
+<!--
+  TODO EST 360 Implement hResume; Restructure and edit text
+               -> http://microformats.org/wiki/hresume
+  TODO EST  30 Review usage of jQuery - use smaller snippet instead
+  TODO EST  60 Review font formatting (introduces problems to IE 8)
+  TODO EST  30 Browser tests for IE 8 and 9, Firefox 10 and Chrome 17
+               -> https://browserlab.adobe.com/
+  TODO EST  60 Review spelling and language style mistakes
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,122 +35,161 @@
 
 <div id="content-scrollable" class="hresume">
 
-  <div id="who_i_am" class="vcard">
-    <h1 class="fn">Enno Weichert</h1>
-    <div id="card-photo">
-      <img class="photo" src="img/photo.png" alt="a photo of me"/>
+  <div id="who_i_am">
+    <address class="vcard">
+      <h1 class="fn">Enno Weichert</h1>
+      <div id="card-photo">
+        <img class="photo" src="img/photo.png" alt="a photo of me"/>
+      </div>
+      <dl id="card-text">
+        <dt>email</dt>
+          <dd><a class="email" href="mailto:enno.weichert@googlemail.com">
+            enno.weichert@googlemail.com
+          </a></dd>
+        <dt>phone</dt>
+          <dd><a class="tel" href="tel:+49.1578.8476548">
+            +49 1578 8476548
+          </a></dd>
+        <dt>address</dt>
+          <dd><a class="adr" href="geo:53.347913,7.229822;u=35">
+            <span class="street-address">Wykhoffweg 52</span>, 
+            <span class="postal-code">26725</span> 
+            <span class="locality">Emden</span>, 
+            <span class="country-name">Germany</span>
+          </a></dd>
+        <dt>birthday</dt>
+          <dd><time class="bday" datetime="1978-02-09">
+            February 9th 1978
+          </time></dd>
+      </dl>
+    </address>
+    <div class="summary">
+      <p >
+        I lead a colorful life with a lot of creep and jump scares.
+        I have done a lot of different things in the past and I am not afraid to change again.<br />
+        I have got a positive attitude (quarter-full) and am not easily scared.
+      </p>
+      <p>
+        I have solid experience in Linux administration and basic experience in programming small-scale web applications.<br />
+        I am experienced in using version control, bugtrackers and wikis for development and am eager to learn more about Test-driven development and Continuous integration.
+      </p>
+      <p>
+        I have first-hand experience in interpersonal conflicts and am able to solve them with analytical and rhetorical skills.<br />
+        I have a few creative hobbies giving me insight into how creative people think and work and I am manually skilled as a consequence.<br />
+        In extension to creativity I also experiment with productivity patterns - you could call that <a href="http://lifehacker.com/">life-hacks</a>.
+      </p>
     </div>
-    <dl id="card-text">
-      <dt>email</dt>
-        <dd><a class="email" href="mailto:enno.weichert@googlemail.com">enno.weichert@googlemail.com</a></dd>
-      <dt>phone</dt>
-        <dd><a class="tel" href="tel:+49.1578.8476548">+49 1578 8476548</a></dd>
-      <dt>address</dt>
-        <dd><a class="adr" href="geo:53.347913,7.229822;u=35">
-        <span class="street-address">Wykhoffweg 52</span>, <span class="postal-code">26725</span> <span class="locality">Emden</span>, <span class="country-name">Germany</span></a></dd>
-      <dt>birthday</dt>
-        <dd><time class="bday" datetime="1978-02-09">February 9th 1978</time></dd>
-    </dl>
   </div>
 
   <div id="what_i_can_do">
     <h2>what i can do</h2>
-    <p>
-    I am working on small-scale web projects on the <a href="http://www.apachefriends.org/en/xampp-linux.html">LAMPP</a> stack, the latest one is a mobile web application. I am pretty good at administrating <a href="http://www.debian.org/">Debian</a>-based Linux systems and I find my way around RedHat-based ones as well. I also know the basics of the Apache httpd and I can also do some MySQL administration.<br />
-    I do most of my PHP programming with <a href="http://framework.zend.com/">Zend Framework</a> but I have used micro-frameworks like <a href="http://www.limonade-php.net/">Limonade</a> as well. My web applications rely on HTML5 and the Ajax libraries <a href="http://jquery.com/">jQuery</a> and jQuery Mobile.<br />
-    I am organizing my projects with wikis, issue trackers and revision control systems.
-    </p><p>
-    I am straightforward and not afraid talking about touchy issues but I always have a very constructive and polite approach towards it. I am also very open to others and can take constructive criticism pretty well.<br />
-    If there is a conflict I tend to <a href="http://www.schulz-von-thun.de/">analyze</a> it and resolve it by exchanging perspectives, if people need guidance I can often provide that as well.<br />
-    </p><p>
-    I like to get <a href="http://ficly.com/">creative</a> and although I think this is clearly not my major domain I think I got some insight into the whys and whens of creative people. I do some graphics myself sometimes but it is really just a hobby. 
-    </p><p>
-    I follow <a href="http://www.davidco.com/">Getting Things Done</a> as an organizational pattern. I am not a fanboy but I learned to appreciate it a lot. I am also trying out <a href="http://lifehacker.com/">lifehacks</a> as I see fit. I think of it as just an extension to my overall <a href="http://www.instructables.com/">do-it-yourself</a> approach.<br />
-    Not everything about organization is fancy and exciting though but some things just have to be done, right?
-    </p>
     <dl>
-      <dt>Fremdsprachen</dt>
-        <dd>Englisch in Wort und Schrift fließend</dd>
-      <dt>Softwarekenntnisse</dt>
-        <dd>Installieren, Verwalten und Nutzen von:<br/>
+      <dt>Languages</dt>
+        <dd><ul><li>English spoken and written fluently</li></ul></dd>
+      <dt>Software skills</dt>
+        <dd>Installing, administrating and using:<br/>
           <ul>
-            <li><a href="">Debian GNU/Linux</a> und <a href="">Ubuntu</a> mit langjähriger Erfahrung</li>
-            <li><a href="">Red Hat</a> und Derivate mit Erfahrung</li>
-            <li>Windows XP bis 7 mit Erfahrung</li>
-            <li>Windows Server 2008 mit Grundkenntnissen</li>
-            <li><a href="">Apache HTTP Server</a> mit Erfahrung</li>
-            <li><a href="">MySQL</a> mit Erfahrung</li>
-            <li><a href="">Trac</a> und <a href="">Redmine</a> Bugtracker mit Erfahrung</li>
-            <li><a href="">Subversion</a> und <a href="">Git</a> Versionsverwaltung mit Erfahrung</li>
-            <li><a href="">Gnu Emacs</a>, <a href="">Vi</a> und <a href="">Eclipse</a> mit Erfahrung</li>
+            <li><a href="">Debian GNU/Linux</a> and <a href="">Ubuntu</a> with years of experience</li>
+            <li><a href="">Red Hat</a> and derivatives with solid experience</li>
+            <li>Windows XP bis 7 with solid experience</li>
+            <li>Windows Server 2008 with basic experience</li>
+            <li><a href="">Apache HTTP Server</a> with basic experience</li>
+            <li><a href="">MySQL</a> with basic experience</li>
+            <li><a href="">Trac</a> and <a href="">Redmine</a> Bugtracker with basic experience</li>
+            <li><a href="">Subversion</a> and <a href="">Git</a> version control with basic experience</li>
+            <li><a href="">Gnu Emacs</a>, <a href="">Vi</a> and <a href="">Eclipse</a> with basic experience</li>
           </ul>
         </dd>
-      <dt>Programmiersprachen</dt>
+      <dt>Programming languages</dt>
         <dd>
           <ul>
-            <li>Objektorientierte Programmierung mit langjähriger Erfahrung</li>
-            <li>(X)HTML, CSS, XML und SGML mit Erfahrung</li>
-            <li>Bash, Visual Basic, PHP und Javascript mit Erfahrung</li>
-            <li>C, C++ und Java mit soliden Grundkenntnissen</li>
-            <li>Cake und Zend Framework mit Erfahrung</li>
-            <li>Jquery und Dojo Toolkit mit Grundkenntnissen</li>
+            <li>Object oriented programming with years of experience</li>
+            <li>(X)HTML, CSS, XML and SGML with basic experience</li>
+            <li>Bash, PHP and Javascript with basic experience</li>
+            <li>Cake and Zend Framework with basic experience</li>
+            <li>C, C++ and Java with a basic knowledge</li>
+            <li>Jquery and Dojo Toolkit with basic knowledge</li>
           </ul>
         </dd>
-      <dt>Sonstige Kenntnisse</dt>
-        <dd>Getting Things Done Workflow mit langjähriger Erfahrung
-            Solide handwerkliche Grundkenntnisse (Do-It-Yourself)
-            Erfahrung im Verhandeln und Führen von Verkaufsgesprächen
-            Langjährige Erfahrung im Umgang mit zwischenmenschlichen
-            Konflikten</dd>
-      <dt>Interessen</dt>
-        <dd>HTML5 und Mobile Anwendungen
-            Serverseitiges Javascript
-            Test-/Behavior Driven Development, Continuous Integration
-            Sicherheit und Ergonomie in IT-Systemen
-            Kommunikation und Kommunikationspsychologie
-            Lehren und lernen
-            Musik (Glenn Gould bis Mastodon)
-            Gitarre spielen
-            Geschichte, Kultur und Zeitgeschehen weltweit
-            Kochen weltweiter Rezepte</dd>
+      <dt>Other skills</dt>
+        <dd><ul>
+          <li>Getting Things Done Workflow with years of experience</li>
+          <li>Solid basic manual skills (Do-It-Yourself)</li>
+          <li>Solid Experience in negotiating and conducting sales talks</li>
+          <li>Many years of experience in dealing with interpersonal conflicts</li>
+        </ul></dd>
+      <dt>Interests</dt>
+        <dd><ul>
+          <li>HTML5 and mobile applications</li>
+          <li>Serverside Javascript</li>
+          <li>Test-/Behavior Driven Development, Continuous Integration</li>
+          <li>Security ergonomics in IT systems</li>
+          <li>Communication and communication psychology</li>
+          <li>Teaching and learning</li>
+          <li>Music (Glenn Gould to Mastodon)</li>
+          <li>Playing guitar</li>
+          <li>History, culture and current events around the world</li>
+          <li>International cuisine</li>
+        </ul></dd>
     </dl>
   </div>
 
   <div id="what_i_did_in_the_past">
     <h2>what i did in the past</h2>
     <dl>
-      <dt>Februar 2012 bis April 2012</dt>
-      <dd>Selbständige Entwicklung einer Javascript-basierten HTML5 Anwendung zur Selbstorganisation</dd>
-      <dt>2010 bis Januar 2012</dt>
-      <dd>CVU Büro und Technik Berlin GmbH
-            Entwicklung einer Webseite für mobile Endgeräte</dd>
-      <dt>2010 bis Januar 2012</dt>
-      <dd>MD Schulung &amp; Beratung GmbH
-            Umschulung zum Fachinformatiker Anwendungsentwicklung
-            Ergebnislos, da keine Ausbildungsinhalte vermittelt wurden</dd>
-      <dt>2007 bis 2010</dt>
-      <dd>Selbständige Weiterbildung in den Bereichen Informationstechnologie, Kommunikationspsychologie, Informationsmanagement und Organisation</dd>
-      <dt>2004 bis 2005</dt>
-      <dd>Werkstätten der Arbeiterwohlfahrt Dortmund GmbH
-            Ehrenamtlicher Helfer in der Schreinerei</dd>
-      <dt>1998 bis 2006</dt>
-      <dd>Wechselnde Beschäftigungen als:
-            Programmierer
-            Produktionshelfer
-            Landwirtschaftlicher Helfer
-            Außendienstmitarbeiter, Fundraising</dd>
-      <dt>1998 bis 2001</dt>
-      <dd>Universität Dortmund
-            Informatikstudium (abgebrochen)</dd>
-      <dt>1997 bis 1998</dt>
-      <dd>Albert-Schweitzer-Klinik Northeim
-            Zivildienst in der Verwaltung</dd>
-      <dt>1996 bis 1997</dt>
-      <dd>Orgaplan GmbH
-            Programmierer</dd>
-      <dt>1994 bis 1997</dt>
-      <dd>Fachgymnasium Wirtschaft BBS 1 Northeim
-            Abitur</dd>
+      <dt>February 2012 to April 2012</dt>
+        <dd>Independent development of a Javascript based HTML5 application for self-organization</dd>
+      <dt>2010 to January 2012</dt>
+        <dd>
+          <div>MD Schulung &amp; Beratung GmbH Emden</div>
+          <div>Training for Application Development Specialist (Fachinformatiker Anwendungsentwicklung)</div>
+          <p>
+            I started training just to get to Berlin. Once it became clear that going to Berlin for a third time would create fundamental, existential problems for me, I quit because no training content was taught anyway.<br />
+            I was never interested in getting the exam as I deemed it worthless from the very first day! (Like it turned out to be)
+          </p>
+        </dd>
+      <dt>2010 to 2011</dt>
+        <dd>
+          <div>CVU Büro und Technik Berlin GmbH</div>
+          <div>Two internships: Development of a website for mobile devices</div>
+        </dd>
+      <dt>2007 to 2010</dt>
+        <dd>
+          Self-training in the areas 
+          <ul>
+            <li>information technology</li>
+            <li>communication psychology</li>
+            <li>information management</li>
+            <li>self-organization</li>
+          </ul>
+        </dd>
+      <dt>2005 to 2006</dt>
+        <dd>
+          Temporary employments as:
+          <ul>
+            <li>Boat maintenance and repair</li>
+            <li>Agricultural worker</li>
+            <li>Production Assistant</li>
+          </ul>
+        </dd>
+      <dt>2004 to 2005</dt>
+        <dd><div>Werkstätten der Arbeiterwohlfahrt Dortmund GmbH</div>
+          <div>Volunteer in the sheltered carpentry workshop, working with mentally handicapped people.</div></dd>
+      <dt>2002 to 2003</dt>
+        <dd><div>Socialinformation Marketinggesellschaft mbH Köln</div>
+          <div>Sales representative in fund raising</div></dd>
+      <dt>1998 to 2001</dt>
+        <dd><div>Universität Dortmund</div>
+          <div>Computer Science (without graduation)</div></dd>
+      <dt>1997 to 1998</dt>
+        <dd><div>Albert-Schweitzer-Klinik Northeim</div>
+          <div>Alternative civilian service (Zivildienst)</div></dd>
+      <dt>1996 to 1997</dt>
+        <dd><div>Orgaplan GmbH Northeim</div>
+          <div>Programming in COBOL and Visual Basic</div></dd>
+      <dt>1994 to 1997</dt>
+        <dd><div>Fachgymnasium Wirtschaft BBS 1 Northeim</div>
+          <div>Abitur</div></dd>
     </dl>
   </div>
   
