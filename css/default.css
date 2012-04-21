@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   /*font-family: sans-serif;*/
-  font-weight:400;
+  font-weight:normal;
   font-size: 1.1em;
   background: #fff;
   position: relative;
@@ -14,7 +14,7 @@ body {
 
 a {
   text-decoration:none;
-  font-weight:600;
+  font-weight:bold;
   color: inherit;
 }
 
@@ -23,7 +23,7 @@ address { font-style: normal;}
 h1, h2, h3, h4 {
   font-family: "Kreon", serif;
   /*font-family: serif;*/
-  font-weight: 400;
+  font-weight: normal;
   color: #111;
   text-transform:lowercase;
 }

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Enno Weichert</title>
   <meta name="author" content="Enno Weichert">
-  <meta name="copyright" content="&copy; 2012 Enno Weichert">
+  <meta name="copyright" content="Copyright 2012 Enno Weichert">
   <meta name="description" content="R&eacute;sum&eacute;/CV of Enno Weichert.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Cache-Control" content="public">
@@ -269,10 +269,15 @@
   <div id="meta" class="content-section">
     <h2>meta</h2>
     <p>
-      This page was a chore to create, mainly because of the Microformats I used. I thought it was a good idea but I do not think I will ever do it again. I am looking forward to do all of it in HTML5.
+      <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">This page is Copyright 2012 Enno Weichert and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons CC BY-NC-ND 3.0 License</a>.
     </p>
     <p>
-
+      It is funny, although this page might look pretty decent it is probably the most horrible one I ever created. I had to change so many things when I decided to introduce Microformats into it, that the whole structure suffered badly.<br />
+      It is throwing a ton of validation errors, too, just because of that.<br />
+      In retrospect I think that Microformats and the way I think of HTML5 semantics are largely incompatible. For example the <code>'title'</code> attribute should not contain elemental data.
+    </p>
+    <p>
+      However, by learning what I do not want to repeat I learn what I want to do. And here it is obviously getting HTML5 custom tags straight and interpret them with my own javascript, and not to rely on browser implementations of obscure (micro)formats.
     </p>
     <p>
       If you want to know more about the internals here are the technologies I was using to create this page:
@@ -286,6 +291,12 @@
         <dd>Because this page relies on semanticization instead of graphical design, any layout and design has to come from Cascading Stylesheets. There are still loopholes however as I am still learning how to do this better.</dd>
       <dt><a href="http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm">Javascript</a></dt>
         <dd>Although my focus in programming right now is on Javascript I tried to use none of it on this page. It did not work out however: I still need a jQuery scroll script for the static header. But I did not do anything myself here.</dd>
+      <dt><a href="jquery.com">jQuery</a></dt>
+        <dd>I just need it for jScroll</dd>
+      <dt><a href="http://www.wduffy.co.uk/jScroll/">jScroll by William Duffy</a></dt>
+        <dd>I just need it to have a static offset for my anchors  because I use a menubar on top and this is still not implemented in CSS.</dd>
+      <dt><a href="http://www.google.com/webfonts">Google Web Fonts</a></dt>
+        <dd>I am using it to have at least some typographical stability.</dd>
       <dt><a href="http://inkscape.org/">Inkscape</a></dt>
         <dd>The workflow is crappy but it gets the job done. I am usually using it just for vector-based icons. The overall goal here however is to get rid of the bitmaps for the most part.</dd>
       <dt><a href="http://www.sublimetext.com/">Sublime Text 2</a></dt>
