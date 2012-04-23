@@ -123,6 +123,18 @@ h2 {
 /* 
  * Specific content sections 
  */
+
+#motto {
+  padding: .6em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  background: #E6F5FF;
+  color: #009FFF;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-align:center;
+}
+
 #card-photo {
   width: 96px;
   height: 96px;
