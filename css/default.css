@@ -111,7 +111,7 @@ h2 {
 }
 
 #content-scrollable li:before {
-  content: '\2023\a0';
+  content: '\203A\A0';
 }
 
 #content-scrollable li {
