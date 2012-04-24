@@ -17,16 +17,6 @@
   <link rel="stylesheet" type="text/css" href="css/default.css" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Kreon:400' rel='stylesheet' type='text/css'>
-  <script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-  <script type="application/javascript" src="js/jquery.jscroll.min.js"></script>
-  <script type="application/javascript">
-    jQuery(document).ready(function($) {
-      $(".smooth-anchor").click(function(event){    
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top - 85}, 0);
-      });
-    });
-  </script>
 </head>
 
 <body>
@@ -342,6 +332,17 @@
     </a></li>
   </ul>
 </div>
+
+<script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="application/javascript" src="js/jquery.jscroll.min.js"></script>
+<script type="application/javascript">
+  jQuery(document).ready(function($) {
+    $(".smooth-anchor").click(function(event){    
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top - 85}, 0);
+    });
+  });
+</script>
 
 </body>
 </html>
