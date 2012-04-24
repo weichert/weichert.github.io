@@ -105,13 +105,13 @@ h2 {
 
 #content-scrollable ul {
   margin:       0px;
-  padding-left: .6em;
-  text-indent: -.6em;
+  text-indent: -.7em;
+  padding-left: 1em;
   list-style-type: none;
 }
 
 #content-scrollable li:before {
-  content: '\203A\A0';
+  content: '\2022\A0';
 }
 
 #content-scrollable li {
