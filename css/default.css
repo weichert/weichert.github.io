@@ -107,11 +107,11 @@ h2 {
   margin:       0px;
   padding-left: .9em;
   text-indent: -.9em;
-  /*list-style-type: none;*/
+  list-style-type: none;
 }
 
 #content-scrollable li:before {
-  content: '\2043\a0';
+  content: '\2023\a0';
 }
 
 #content-scrollable li {
