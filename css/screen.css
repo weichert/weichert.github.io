@@ -1,0 +1,197 @@
+/* 
+ * General
+ */
+body {
+  font-family: "Open Sans", sans-serif;
+  /*font-family: sans-serif;*/
+  font-weight:normal;
+  font-size: 1.1em;
+  background: #fff;
+  position: relative;
+  margin: 0px auto 20px;
+  max-width: 560px;
+}
+
+a {
+  text-decoration:none;
+  font-weight:bold;
+  color: inherit;
+}
+
+address { font-style: normal;}
+
+h1, h2, h3, h4 {
+  font-family: "Kreon", serif;
+  /*font-family: serif;*/
+  font-weight: normal;
+  color: #111;
+  text-transform:lowercase;
+}
+
+h1 { 
+  font-size:200%;
+}
+
+h2 { 
+  font-size:185%;
+}
+
+/*
+ * Classes
+ */
+.textonly {
+  display: none;
+}
+
+
+
+/* 
+ * Navigation section
+ */
+#navigation-static {
+  background: rgba(255, 255, 255, 0.9);
+  position:fixed;
+  top:     0px;
+  width: 560px;
+  clear:left;
+}
+
+#navigation-static ul {
+  margin:  0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+#navigation-static ul li {
+  float: left;
+  margin: 24px 0px;
+  width: 20%;
+  text-align: center;
+}
+
+#navigation-static a img {
+  border-style: none;
+  /*display: block;*/
+}
+
+
+
+/* 
+ * General content section 
+ */
+#content-scrollable {
+  margin-top: 85px;
+  clear: left;
+}
+
+#content-scrollable p {
+  text-align: justify;
+  padding-left: 1em;
+}
+
+#content-scrollable dt {
+  margin-left: 1em;
+  margin-top:  1em;
+}
+
+#content-scrollable dd {
+  margin-left: 2em;
+  margin-top:  1em;
+}
+
+#content-scrollable dd p {
+  padding-left: 0px;
+}
+
+#content-scrollable ul {
+  margin:       0px;
+  text-indent: -.7em;
+  padding-left: .7em;
+  list-style-type: none;
+}
+
+#content-scrollable li:before {
+  content: '\2022\A0';
+}
+
+#content-scrollable li {
+  margin: 0px;
+}
+
+#content-scrollable a:hover {
+  text-decoration:underline;
+  color: #0031ea;
+}
+
+
+
+/* 
+ * Specific content sections 
+ */
+
+#motto {
+  padding: .5em;
+  margin: 0px 0px 2em 1em;
+  background: #FBFFCE;
+  color: #333;
+  border: 1px solid #DEEA53;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align:center;
+}
+
+#card-photo {
+  width:  96px;
+  height: 96px;
+  padding-left:  1em;
+  padding-right: 1em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#card-photo img {
+  display: block;
+}
+
+#card-text{ 
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+#card-text dt {
+  margin: 0px;
+  float: left;
+  clear: left;
+}
+
+#card-text dt:after {
+  content: ":";
+}
+
+#card-text dd {
+  margin: 0 0 0 80px;
+}
+
+#who_i_am .summary {
+  padding-top: 1em;
+}
+
+#what_i_can_do h2 {
+  color: #00cc00;
+}
+
+#what_i_did_in_the_past h2 {
+  color: #0197fd;
+}
+
+#who_i_am_looking_for h2 {
+  color: #fdca01;
+}
+
+#how_we_team_up h2 {
+  color: #ff0036;
+}
+
+#meta, #meta h2 {
+  color: #888
+}
