@@ -2,8 +2,8 @@
  * General
  */
 body {
-  /*font-family: "Open Sans", sans-serif;*/
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  /*font-family: sans-serif;*/
   font-weight:normal;
   font-size: 1.1em;
   background: #fff;
@@ -107,7 +107,7 @@ h2 {
   margin:       0px;
   padding-left: .9em;
   text-indent: -.9em;
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 
 #content-scrollable li:before {
