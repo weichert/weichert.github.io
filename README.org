@@ -1,10 +1,10 @@
-TODO List for brillenfux.github.com
+Todo-list for brillenfux.github.com
 ===================================
 
 * Features
 
 ** TODO polish them rockets
-** TODO swallow those pills
+** DONE swallow those pills
 
 * Fixes
 
