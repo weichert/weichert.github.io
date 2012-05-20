@@ -1,5 +1,0 @@
-* ISSUES
-** TODO [Feature] polish them rockets
-** DONE [Feature] swallow those pills
-   CLOSED: [2012-04-25 Wed 14:40]
-** TODO [Bugfix]  Just one
