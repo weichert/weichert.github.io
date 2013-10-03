@@ -1,341 +1,377 @@
-<div id="carousel-example-generic" class="carousel slide" style="background-color:#222;moz-box-sizing:border-box;box-sizing:border-box;height:100vh">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="width: auto">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Back to Top</a></li>
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include JB/pages_list %}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div> <!-- /container -->
+</nav>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        Slide 1
+<div class="content">
+  <div id="carousel-example-generic" class="carousel slide" style="background-color:#222;moz-box-sizing:border-box;box-sizing:border-box;height:100vh">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="..." alt="...">
+        <div class="carousel-caption">
+          Slide 1
+        </div>
+      </div>
+      <div class="item">
+        <img src="..." alt="...">
+        <div class="carousel-caption">
+          Slide 2
+        </div>
+      </div>
+      <div class="item">
+        <img src="..." alt="...">
+        <div class="carousel-caption">
+          Slide 3
+        </div>
       </div>
     </div>
-    <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        Slide 2
-      </div>
-    </div>
-    <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        Slide 3
-      </div>
-    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
   </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-
-<div id="content-scrollable" class="hresume">
-  <div id="who_i_am" class="content-section">
-    <address class="vcard">
-      <header>
-        <h1 class="fn">Enno Weichert</h1>
-      </header>
-      <div id="motto">seeking to learn more about web application development</div>
-      <div id="card-photo">
-        <img class="photo" src="img/photo.png" alt="a photo of me"/>
+  <div class="container hresume">
+    <div id="who_i_am" class="content-section">
+      <address class="vcard">
+        <header>
+          <h1 class="fn">Enno Weichert</h1>
+        </header>
+        <div id="motto">seeking to learn more about web application development</div>
+        <div id="card-photo">
+          <img class="photo" src="img/photo.png" alt="a photo of me"/>
+        </div>
+        <dl id="card-text">
+          <dt>email</dt>
+            <dd><a class="email" href="mailto:enno.weichert@gmail.com">
+              enno.weichert@gmail.com
+            </a></dd>
+          <dt>phone</dt>
+            <dd><a class="tel" href="tel:+49.1578.8476548">
+              +49 151 20040451
+            </a></dd>
+          <dt>address</dt>
+            <dd><a class="adr" href="geo:53.347913,7.229822;u=35">
+              <span class="street-address">Wykhoffweg 52</span>,
+              <span class="postal-code">26725</span>
+              <span class="locality">Emden</span>,
+              <span class="country-name">Germany</span>
+            </a></dd>
+          <dt>birthday</dt>
+            <dd><time class="bday" datetime="1978-02-09">
+              February 9th 1978
+            </time></dd>
+        </dl>
+      </address>
+      <div class="summary">
+        <p >
+          I lead a pretty colorful life with a lot of creep and jump scares but I maintained a largely positive attitude and am not easily scared.
+        </p>
+        <p>
+          I am a creative and analytical person experimenting with manual skills, music and visuals but also with communication, productivity patterns and source-code.
+        </p>
+        <p>
+          For small-scale web-application development I am using version control systems, bug trackers and wikis. I am mainly working on Linux systems which I am confident to administrate.<br />
+          I am also eager to learn more about Test-driven development and Continuous integration.
+        </p>
       </div>
-      <dl id="card-text">
-        <dt>email</dt>
-          <dd><a class="email" href="mailto:enno.weichert@gmail.com">
-            enno.weichert@gmail.com
-          </a></dd>
-        <dt>phone</dt>
-          <dd><a class="tel" href="tel:+49.1578.8476548">
-            +49 151 20040451
-          </a></dd>
-        <dt>address</dt>
-          <dd><a class="adr" href="geo:53.347913,7.229822;u=35">
-            <span class="street-address">Wykhoffweg 52</span>,
-            <span class="postal-code">26725</span>
-            <span class="locality">Emden</span>,
-            <span class="country-name">Germany</span>
-          </a></dd>
-        <dt>birthday</dt>
-          <dd><time class="bday" datetime="1978-02-09">
-            February 9th 1978
-          </time></dd>
+    </div>
+    <div id="what_i_can_do" class="content-section">
+      <h2>what i can do</h2>
+      <dl>
+        <div class="content-paragraph">
+          <dt>Languages</dt>
+            <dd><ul>
+              <li>Expert in <span class="skill" rel="tag">German</span> as my first language</li>
+              <li>Advanced in <span class="skill" rel="tag">English</span> with many years of experience in information technology</li>
+            </ul></dd>
+        </div>
+        <div class="content-paragraph">
+          <dt>People skills</dt>
+              <dd>
+                <ul>
+                  <li>Advanced in <span class="skill" rel="tag">introspection</span> through difficult personal circumstances</li>
+                  <li>Advanced in <span class="skill" rel="tag">teamwork</span> and <span class="skill" rel="tag">Interpersonal communication</span> with many years of experience in a variety of jobs and environments</li>
+                  <li>Advanced in <span class="skill" rel="tag">conflict resolution</span> with many years of experience in a variety of jobs and environments</li>
+                  <li>Intermediate in <span class="skill" rel="tag">negotiation</span> and <span class="skill" rel="tag">sales</span></li>
+                  <li>Intermediate in <span class="skill" rel="tag">leadership</span> and <span class="skill" rel="tag">teaching</span></li>
+                </ul>
+              </dd>
+        </div>
+        <div class="content-paragraph">
+          <dt>Workflow</dt>
+            <dd><ul>
+              <li>Advanced in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> with many years of experience</li>
+              <li>Advanced in <a class="skill" rel="tag" href="https://mail.google.com/">Gmail</a>, <a class="skill" rel="tag" href="hhttps://drive.google.com/">Google Drive</a> with many years of experience because my workflow is largely web-centered</li>
+              <li>Intermediate in <a class="skill" rel="tag" href="https://www.dropbox.com/">Dropbox</a></li>
+              <li>Intermediate in <a class="skill" rel="tag" href="http://www.redmine.org/">Redmine</a></li>
+              <li>Intermediate in <a class="skill" rel="tag" href="https://github.com/">Github</a></li>
+              <li>Intermediate in <a class="skill" rel="tag" href="http://www.gnu.org/software/emacs">Gnu Emacs</a>, <a class="skill" rel="tag" href="http://www.vim.org/">Vim</a> and <a class="skill" rel="tag" href="http://www.eclipse.org/">Eclipse</a></li>
+              <li>Advanced in <a class="skill" rel="tag" href="http://www.android.com/">Android</a> with years of experience using smart-phones and tablets</li>
+              <li>Advanced in <span class="skill" rel="tag">Do-It-Yourself</span> manual skills with many years of experience improvising in difficult situations</li>
+            </ul></dd>
+        </div>
+        <div class="content-paragraph manual-page-break">
+          <dt>System administration</dt>
+            <dd><ul>
+              <li>Advanced in <a class="skill" rel="tag" href="http://www.debian.org/">Debian GNU/Linux</a> and <a class="skill" rel="tag" href="http://www.ubuntu.com/">Ubuntu</a> with many years of experience using it on my desktops and servers</li>
+              <li>Intermediate in <a class="skill" rel="tag" href="http://www.redhat.com/">Red Hat</a> derivatives</li>
+              <li>Intermediate in <a class="skill" rel="tag" href="http://www.microsoft.com/windows/windows-xp/default.aspx">Windows XP</a> to <a class="skill" rel="tag" href="http://www.microsoft.com/windows/windows-7/default.aspx">Windows 7</a></li>
+              <li>Beginner in <a class="skill" rel="tag" href="http://www.microsoft.com/windowsserver2008/en/us/default.aspx">Windows Server 2008</a></li>
+              <li>Beginner in <a class="skill" rel="tag" href="http://httpd.apache.org/">Apache HTTP Server</a></li>
+              <li>Beginner in <a class="skill" rel="tag" href="http://www.mysql.com/">MySQL</a></li>
+              <li>Beginner in <a class="skill" rel="tag" href="http://trac.edgewall.org/">Trac</a> and <a class="skill" rel="tag" href="http://www.redmine.org/">Redmine</a></li>
+              <li>Beginner in <a class="skill" rel="tag" href="http://subversion.apache.org/">Subversion</a> and <a class="skill" rel="tag" href="http://git-scm.com/">Git</a></li>
+            </ul></dd>
+        </div>
+        <div class="content-paragraph">
+          <dt>Programming languages</dt>
+            <dd><ul>
+              <li>Advanced in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object-oriented programming</a></li>
+              <li>Advanced in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/(X)HTML#Relationship_to_HTML">(X)HTML</a>, <a class="skill" rel="tag" href="http://www.w3.org/Style/CSS/">CSS</a>, <a class="skill" rel="tag" href="http://www.w3.org/XML/">XML</a> and <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Sgml">SGML</a></li>
+              <li>Intermediate in <a class="skill" rel="tag" href="http://www.gnu.org/software/bash/">Bash</a>, <a class="skill" rel="tag" href="http://www.php.net/">PHP</a> and <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Javascript">JavaScript</a></li>
+              <li>Intermediate in <a class="skill" rel="tag" href="http://cakephp.org/">CakePHP</a> and <a class="skill" rel="tag" href="http://framework.zend.com/">Zend Framework</a></li>
+              <li>Beginner in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C_(programming_language)">C</a>, <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C++_(programming_language)">C++</a> and <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a></li>
+              <li>Beginner in <a class="skill" rel="tag" href="http://jquery.com/">Jquery</a> and <a class="skill" rel="tag" href="http://dojotoolkit.org/">Dojo Toolkit</a></li>
+            </ul></dd>
+        </div>
+        <div class="content-paragraph">
+          <dt>Interests</dt>
+            <dd><ul>
+              <li><a href="http://www.w3.org/TR/html5/">HTML5</a> and web applications</li>
+              <li><a href="http://nodejs.org/">JavaScript on the server</a></li>
+              <li><a href="http://en.wikipedia.org/wiki/Test_driven_development">Test-/Behavior Driven Development</a>, <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a></li>
+              <li><a href="http://blogs.iss.net/archive/SecurityErgonomics.html">Security ergonomics</a> in IT systems</li>
+              <li>Communication and <a href="http://en.wikipedia.org/wiki/Interpersonal_communication">communication psychology</a></li>
+              <li>Teaching and learning</li>
+              <li>Music (<a href="http://www.glenngould.com/">Glenn Gould</a> to <a href="http://www.mastodonrocks.com/">Mastodon</a>)</li>
+              <li>Playing guitar</li>
+              <li>History, culture and current events around the world</li>
+              <li>International cuisine</li>
+            </ul></dd>
+        </div>
       </dl>
-    </address>
-    <div class="summary">
-      <p >
-        I lead a pretty colorful life with a lot of creep and jump scares but I maintained a largely positive attitude and am not easily scared.
-      </p>
-      <p>
-        I am a creative and analytical person experimenting with manual skills, music and visuals but also with communication, productivity patterns and source-code.
-      </p>
-      <p>
-        For small-scale web-application development I am using version control systems, bug trackers and wikis. I am mainly working on Linux systems which I am confident to administrate.<br />
-        I am also eager to learn more about Test-driven development and Continuous integration.
-      </p>
     </div>
-  </div>
-  <div id="what_i_can_do" class="content-section">
-    <h2>what i can do</h2>
-    <dl>
-      <div class="content-paragraph">
-        <dt>Languages</dt>
-          <dd><ul>
-            <li>Expert in <span class="skill" rel="tag">German</span> as my first language</li>
-            <li>Advanced in <span class="skill" rel="tag">English</span> with many years of experience in information technology</li>
-          </ul></dd>
-      </div>
-      <div class="content-paragraph">
-        <dt>People skills</dt>
+    <div id="what_i_did_in_the_past" class="content-section">
+      <h2>what i did in the past</h2>
+      <dl class="vcalendar">
+        <div class="education vevent content-paragraph">
+          <dt class="summary"><a href="http://github.com/weichert/">Independent web development</a></dt>
             <dd>
-              <ul>
-                <li>Advanced in <span class="skill" rel="tag">introspection</span> through difficult personal circumstances</li>
-                <li>Advanced in <span class="skill" rel="tag">teamwork</span> and <span class="skill" rel="tag">Interpersonal communication</span> with many years of experience in a variety of jobs and environments</li>
-                <li>Advanced in <span class="skill" rel="tag">conflict resolution</span> with many years of experience in a variety of jobs and environments</li>
-                <li>Intermediate in <span class="skill" rel="tag">negotiation</span> and <span class="skill" rel="tag">sales</span></li>
-                <li>Intermediate in <span class="skill" rel="tag">leadership</span> and <span class="skill" rel="tag">teaching</span></li>
+              <div><abbr class="dtstart" title="Today">Today</abbr></div>
+              <div class="description">Self-training in JavaScript, Dojo Toolkit, HTML5 and extension of my digitized cloud-based self-organization.</div>
+            </dd>
+        </div>
+        <div class="education vevent content-paragraph">
+          <dt class="summary vcard"><a class="url fn org" href="http://www.md-systemhaus.de/">MD Schulung &amp; Beratung GmbH <span class="adr locality">Emden</span></a></dt>
+            <dd>
+              <div><abbr class="dtstart" title="2010">2010</abbr>&ndash;<abbr class="dtend" title="2012">2012</abbr></div>
+              <div class="description">
+                Training for Application Development Specialist (Fachinformatiker Anwendungsentwicklung)<br />
+  Quit for organizational reasons.<br />
+              </div>
+            </dd>
+        </div>
+        <div class="experience vevent content-paragraph">
+          <dt class="summary vcard"><a class="url fn org" href="http://www.cvu-berlin.de/">CVU Büro und Technik <span class="adr locality">Berlin</span> GmbH</a></dt>
+            <dd>
+              <div><abbr class="dtstart" title="2010">2010</abbr>&ndash;<abbr class="dtend" title="2011">2011</abbr></div>
+              <div class="description">Two internships: Development of a website for mobile devices</div>
+            </dd>
+        </div>
+        <div class="education vevent content-paragraph">
+          <dt class="summary">Self-training in several areas</dt>
+            <dd>
+              <abbr class="dtstart" title="2007">2007</abbr>&ndash;<abbr class="dtend" title="2010">2010</abbr>
+              <ul class="description">
+                <li>information technology,</li>
+                <li>communication psychology,</li>
+                <li>information management,</li>
+                <li>self-organization</li>
               </ul>
             </dd>
-      </div>
-      <div class="content-paragraph">
-        <dt>Workflow</dt>
-          <dd><ul>
-            <li>Advanced in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> with many years of experience</li>
-            <li>Advanced in <a class="skill" rel="tag" href="https://mail.google.com/">Gmail</a>, <a class="skill" rel="tag" href="hhttps://drive.google.com/">Google Drive</a> with many years of experience because my workflow is largely web-centered</li>
-            <li>Intermediate in <a class="skill" rel="tag" href="https://www.dropbox.com/">Dropbox</a></li>
-            <li>Intermediate in <a class="skill" rel="tag" href="http://www.redmine.org/">Redmine</a></li>
-            <li>Intermediate in <a class="skill" rel="tag" href="https://github.com/">Github</a></li>
-            <li>Intermediate in <a class="skill" rel="tag" href="http://www.gnu.org/software/emacs">Gnu Emacs</a>, <a class="skill" rel="tag" href="http://www.vim.org/">Vim</a> and <a class="skill" rel="tag" href="http://www.eclipse.org/">Eclipse</a></li>
-            <li>Advanced in <a class="skill" rel="tag" href="http://www.android.com/">Android</a> with years of experience using smart-phones and tablets</li>
-            <li>Advanced in <span class="skill" rel="tag">Do-It-Yourself</span> manual skills with many years of experience improvising in difficult situations</li>
-          </ul></dd>
-      </div>
-      <div class="content-paragraph manual-page-break">
-        <dt>System administration</dt>
-          <dd><ul>
-            <li>Advanced in <a class="skill" rel="tag" href="http://www.debian.org/">Debian GNU/Linux</a> and <a class="skill" rel="tag" href="http://www.ubuntu.com/">Ubuntu</a> with many years of experience using it on my desktops and servers</li>
-            <li>Intermediate in <a class="skill" rel="tag" href="http://www.redhat.com/">Red Hat</a> derivatives</li>
-            <li>Intermediate in <a class="skill" rel="tag" href="http://www.microsoft.com/windows/windows-xp/default.aspx">Windows XP</a> to <a class="skill" rel="tag" href="http://www.microsoft.com/windows/windows-7/default.aspx">Windows 7</a></li>
-            <li>Beginner in <a class="skill" rel="tag" href="http://www.microsoft.com/windowsserver2008/en/us/default.aspx">Windows Server 2008</a></li>
-            <li>Beginner in <a class="skill" rel="tag" href="http://httpd.apache.org/">Apache HTTP Server</a></li>
-            <li>Beginner in <a class="skill" rel="tag" href="http://www.mysql.com/">MySQL</a></li>
-            <li>Beginner in <a class="skill" rel="tag" href="http://trac.edgewall.org/">Trac</a> and <a class="skill" rel="tag" href="http://www.redmine.org/">Redmine</a></li>
-            <li>Beginner in <a class="skill" rel="tag" href="http://subversion.apache.org/">Subversion</a> and <a class="skill" rel="tag" href="http://git-scm.com/">Git</a></li>
-          </ul></dd>
-      </div>
-      <div class="content-paragraph">
-        <dt>Programming languages</dt>
-          <dd><ul>
-            <li>Advanced in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object-oriented programming</a></li>
-            <li>Advanced in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/(X)HTML#Relationship_to_HTML">(X)HTML</a>, <a class="skill" rel="tag" href="http://www.w3.org/Style/CSS/">CSS</a>, <a class="skill" rel="tag" href="http://www.w3.org/XML/">XML</a> and <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Sgml">SGML</a></li>
-            <li>Intermediate in <a class="skill" rel="tag" href="http://www.gnu.org/software/bash/">Bash</a>, <a class="skill" rel="tag" href="http://www.php.net/">PHP</a> and <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Javascript">JavaScript</a></li>
-            <li>Intermediate in <a class="skill" rel="tag" href="http://cakephp.org/">CakePHP</a> and <a class="skill" rel="tag" href="http://framework.zend.com/">Zend Framework</a></li>
-            <li>Beginner in <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C_(programming_language)">C</a>, <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C++_(programming_language)">C++</a> and <a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a></li>
-            <li>Beginner in <a class="skill" rel="tag" href="http://jquery.com/">Jquery</a> and <a class="skill" rel="tag" href="http://dojotoolkit.org/">Dojo Toolkit</a></li>
-          </ul></dd>
-      </div>
-      <div class="content-paragraph">
-        <dt>Interests</dt>
-          <dd><ul>
-            <li><a href="http://www.w3.org/TR/html5/">HTML5</a> and web applications</li>
-            <li><a href="http://nodejs.org/">JavaScript on the server</a></li>
-            <li><a href="http://en.wikipedia.org/wiki/Test_driven_development">Test-/Behavior Driven Development</a>, <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration</a></li>
-            <li><a href="http://blogs.iss.net/archive/SecurityErgonomics.html">Security ergonomics</a> in IT systems</li>
-            <li>Communication and <a href="http://en.wikipedia.org/wiki/Interpersonal_communication">communication psychology</a></li>
-            <li>Teaching and learning</li>
-            <li>Music (<a href="http://www.glenngould.com/">Glenn Gould</a> to <a href="http://www.mastodonrocks.com/">Mastodon</a>)</li>
-            <li>Playing guitar</li>
-            <li>History, culture and current events around the world</li>
-            <li>International cuisine</li>
-          </ul></dd>
-      </div>
-    </dl>
-  </div>
-  <div id="what_i_did_in_the_past" class="content-section">
-    <h2>what i did in the past</h2>
-    <dl class="vcalendar">
-      <div class="education vevent content-paragraph">
-        <dt class="summary"><a href="http://github.com/weichert/">Independent web development</a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="Today">Today</abbr></div>
-            <div class="description">Self-training in JavaScript, Dojo Toolkit, HTML5 and extension of my digitized cloud-based self-organization.</div>
-          </dd>
-      </div>
-      <div class="education vevent content-paragraph">
-        <dt class="summary vcard"><a class="url fn org" href="http://www.md-systemhaus.de/">MD Schulung &amp; Beratung GmbH <span class="adr locality">Emden</span></a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="2010">2010</abbr>&ndash;<abbr class="dtend" title="2012">2012</abbr></div>
-            <div class="description">
-              Training for Application Development Specialist (Fachinformatiker Anwendungsentwicklung)<br />
-Quit for organizational reasons.<br />
-            </div>
-          </dd>
-      </div>
-      <div class="experience vevent content-paragraph">
-        <dt class="summary vcard"><a class="url fn org" href="http://www.cvu-berlin.de/">CVU Büro und Technik <span class="adr locality">Berlin</span> GmbH</a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="2010">2010</abbr>&ndash;<abbr class="dtend" title="2011">2011</abbr></div>
-            <div class="description">Two internships: Development of a website for mobile devices</div>
-          </dd>
-      </div>
-      <div class="education vevent content-paragraph">
-        <dt class="summary">Self-training in several areas</dt>
-          <dd>
-            <abbr class="dtstart" title="2007">2007</abbr>&ndash;<abbr class="dtend" title="2010">2010</abbr>
-            <ul class="description">
-              <li>information technology,</li>
-              <li>communication psychology,</li>
-              <li>information management,</li>
-              <li>self-organization</li>
-            </ul>
-          </dd>
-      </div>
-      <div class="experience vevent content-paragraph manual-page-break">
-        <dt class="summary">Temporary employments in <span class="adr locality">Emden</span></dt>
-          <dd>
-            <abbr class="dtstart" title="2005">2005</abbr>&ndash;<abbr class="dtend" title="2006">2006</abbr>
-            <ul class="description">
-              <li>Boat maintenance and repair,</li>
-              <li>Agricultural worker,</li>
-              <li>Production Assistant</li>
-            </ul>
-          </dd>
-      </div>
-      <div class="experience vevent content-paragraph">
-        <dt class="summary vcard"><a class="url fn org" href="http://www.awo-dortmund.de/">Werkstätten der Arbeiterwohlfahrt <span class="adr locality">Dortmund</span> GmbH</a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="2004">2004</abbr>&ndash;<abbr class="dtend" title="2005">2005</abbr></div>
-            <div class="description">Volunteer in the sheltered carpentry workshop, working with mentally handicapped people.</div>
-          </dd>
-      </div>
-      <div class="experience vevent content-paragraph">
-        <dt class="summary">Socialinformation Marketinggesellschaft mbH Köln</dt>
-          <dd>
-            <div><abbr class="dtstart" title="2002">2002</abbr>&ndash;<abbr class="dtend" title="2003">2003</abbr></div>
-            <div class="description">Sales representative, fund raising in the <span class="adr locality">Ruhr Metropolitan Region</span></div>
-          </dd>
-      </div>
-      <div class="experience vevent content-paragraph">
-        <dt class="summary">SER Quantum GmbH <span class="adr locality">Dortmund</span></dt>
-          <dd>
-            <div><abbr class="dtstart" title="2001">2001</abbr></div>
-            <div class="description">Programmer in Visual Basic for Applications and Microsoft Access</div>
-          </dd>
-      </div>
-      <div class="education vevent content-paragraph">
-        <dt class="summary vcard"><a class="url fn org" href="http://www.tu-dortmund.de/">Technische Universität <span class="adr locality">Dortmund</span></a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="1998">1998</abbr>&ndash;<abbr class="dtend" title="2001">2001</abbr></div>
-            <div class="description">Computer Science, without graduation</div>
-          </dd>
-      </div>
-      <div class="experience vevent content-paragraph">
-        <dt class="summary vcard"><a class="url fn org" href="http://www.helios-kliniken.de/klinik/northeim.html">Albert-Schweitzer-Klinik <span class="adr locality">Northeim</span></a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="1997">1997</abbr>&ndash;<abbr class="dtend" title="1998">1998</abbr></div>
-            <div class="description">Alternative civilian service (Zivildienst)</div>
-          </dd>
-      </div>
-      <div class="experience vevent content-paragraph manual-page-break">
-        <dt class="summary vcard"><a class="url fn org" href="http://www.orgaplan.org/">Orgaplan GmbH <span class="adr locality">Northeim</span></a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="1996">1996</abbr>&ndash;<abbr class="dtend" title="1997">1997</abbr></div>
-            <div class="description">Programmer in COBOL and Visual Basic</div>
-          </dd>
-      </div>
-      <div class="education vevent content-paragraph">
-        <dt class="summary vcard"><a class="url fn org" href="http://www.fachgymnasium.bbs1-northeim.de/">Fachgymnasium Wirtschaft BBS 1 <span class="adr locality">Northeim</span></a></dt>
-          <dd>
-            <div><abbr class="dtstart" title="1994">1994</abbr>&ndash;<abbr class="dtend" title="1997">1997</abbr></div>
-            <div class="description">Abitur</div>
-          </dd>
-      </div>
-    </dl>
-  </div>
-  <div id="who_i_am_looking_for" class="content-section">
-    <h2>who i am looking for</h2>
-    <p>
-    I like people who think out of the box trying to find a <a href="http://garfieldminusgarfield.net/">different</a> perspective.<br />
-    People who like straightforward and simple solutions, who do not imitate <a href="http://www.forbes.com/lists/">others</a> and instead try to understand and extend.
-    </p><p>
-    Your idea of understanding and extending should relate to open source development and <a href="http://github.com/">collaboration platforms</a>.
-    </p><p>
-    You should work on making things <a href="http://37signals.com/">easier</a> to understand and more <a href="http://www.schneier.com/">secure</a> to use. Systems can only be secure if people understand and like to use them. It's a matter of incentives not restrictions.
-    </p><p>
-    You should lead by example, giving each actor freedom to express and extend, be it customers, freelancers or staff. Using technology to force workflows for example is poison, using it to enable people doing what they otherwise could not is the right way to do it.
-    </p><p>
-    I would like to find someone telling me more about <a href="https://www.livemocha.com">communication</a>, be it between people or between man and machines. I believe you can never learn all of it.
-    </p><p>
-    I would also like to work with people who see workflow and security not only as a technical system but as an interdisciplinary field covering all aspects of human interaction.
-    </p>
-  </div>
-  <div id="how_we_team_up" class="content-section">
-    <h2>how we team up</h2>
-    <p>
-      If you think we have common views, I can do what you need and you want to do what I am looking for then please do not be afraid to contact me.<br />
-      I do not care so much about recruiters and social network whores so please do not waste both of our time &mdash; please <em>never</em> call me.
-    </p><p>
-      There are several ways to contact me each of them with their corresponding advantages and disadvantages.<br />
-      Emailing me however will almost always be appropriate, please use the others with prudence.
-    </p>
-    <dl>
-      <dt>Email</dt>
-        <dd><a href="mailto:enno.weichert@gmail.com">enno.weichert@gmail.com</a></dd>
-      <dt>Phone</dt>
-        <dd><a class="tel" href="tel:+49.1578.8476548">+49 1578 8476548</a></dd>
-      <dt>Skype</dt>
-        <dd><a href="skype:enno.weichert?call">enno.weichert</a></dd>
-      <dt>My social networking services</dt>
-        <dd><a href="https://github.com/weichert">GitHub</a></dd>
-    </dl>
-  </div>
-  <div id="meta" class="content-section noprint">
-    <h2>meta</h2>
-    <p>
-      <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">This page is Copyright 2012 Enno Weichert and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons CC BY-NC-ND 3.0 License</a></span>.
-    </p>
-    <p>
-      For a lot of reasons this page is throwing a ton of validation errors I had to publish it though and I promise to make it better.
-    </p>
-    <p>
-      If you want to know more about the internals, here are the technologies I was using to create this page:
-    </p>
-    <dl>
-      <dt><a href="http://www.w3.org/TR/html5/">HTML5</a></dt>
-        <dd>A lot of it is actually HTML 4, but I strife to make it better. And with better I usually mean better semantics and not so much better graphics.</dd>
-      <dt><a href="http://microformats.org/">Microformats</a></dt>
-        <dd>A resume is generally already a heavily structured document where semantic markup seems really appropriate. This was the ugly part, responsible for a lot of validation errors. <a href="http://ufxtract.com/">UfXtract</a> was incredibly helpful here.</dd>
-      <dt><a href="http://www.w3.org/TR/CSS/">CSS3</a></dt>
-        <dd>Because this page relies on semanticization instead of graphical design, any layout and design has to come from Cascading Style Sheets. There are still loopholes however as I am still learning how to do this better.</dd>
-      <dt><a href="http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm">JavaScript</a></dt>
-        <dd>Although my focus in programming right now is on JavaScript I tried to use none of it on this page. It did not work out however: I still need a jQuery scroll script for the static header. But I did not do anything myself here.</dd>
-      <dt><a href="http://jquery.com/">jQuery</a></dt>
-        <dd>I just need it for jScroll.</dd>
-      <dt><a href="http://www.wduffy.co.uk/jScroll/">jScroll by William Duffy</a></dt>
-        <dd>I just need it to have a static offset for my anchors because I use a menu bar on top and this is still not implemented in CSS.</dd>
-      <dt><a href="https://github.com/">GitHub</a></dt>
-        <dd>This is a static site, changes are tracked with Git and it is hosted on GitHub. You can look at the <a href="https://github.com/weichert/weichert.github.com">source code</a> here.</dd>
-      <dt><a href="https://www.google.com/analytics/">Google Analytics</a></dt>
-        <dd>I want to analyze the traffic on this site, without logic on my own server, this is one way to do it. I set it up to not share any data, I do not know to what avail. I will create a public page for the data in time.</dd>
-      <dt><a href="http://www.google.com/webfonts">Google Web Fonts</a></dt>
-        <dd>I am using it to have at least some typographical stability.</dd>
-      <dt><a href="http://inkscape.org/">Inkscape</a></dt>
-        <dd>The workflow is crappy but it gets the job done. I am usually using it just for vector-based icons. The overall goal here however is to get rid of the bitmaps for the most part.</dd>
-      <dt><a href="http://www.sublimetext.com/">Sublime Text 2</a></dt>
-        <dd>This is actually a test-run and it might turn out that I still like Vim. I am usually doing everything else with Vim.</dd>
-      <dt><a href="http://git-scm.com/">Git</a></dt>
-        <dd>I am using git for a lot of other stuff already so it just made a lot of sense</dd>
-      <dt><a href="http://tiswww.case.edu/php/chet/bash/bashtop.html">Bash</a></dt>
-        <dd>Since I am primarily developing on and for Linux machines (servers and Android) I am using the Bash extensively. I am however a bad bash programmer and still amazed by the amount of useful features it has.</dd>
-      <dt><a href="http://kernel.org/">Linux</a></dt>
-        <dd>The list will have to end with Linux: it is my main operating system for years now - on the desktop as well as on servers. You still cannot expect everything to "just run" and there is no working graphical environment (at least none worth mentioning) but it is making it more than up with transparency and maintainability. I do not think I will ever change it.</dd>
-    </dl>
-  </div>
+        </div>
+        <div class="experience vevent content-paragraph manual-page-break">
+          <dt class="summary">Temporary employments in <span class="adr locality">Emden</span></dt>
+            <dd>
+              <abbr class="dtstart" title="2005">2005</abbr>&ndash;<abbr class="dtend" title="2006">2006</abbr>
+              <ul class="description">
+                <li>Boat maintenance and repair,</li>
+                <li>Agricultural worker,</li>
+                <li>Production Assistant</li>
+              </ul>
+            </dd>
+        </div>
+        <div class="experience vevent content-paragraph">
+          <dt class="summary vcard"><a class="url fn org" href="http://www.awo-dortmund.de/">Werkstätten der Arbeiterwohlfahrt <span class="adr locality">Dortmund</span> GmbH</a></dt>
+            <dd>
+              <div><abbr class="dtstart" title="2004">2004</abbr>&ndash;<abbr class="dtend" title="2005">2005</abbr></div>
+              <div class="description">Volunteer in the sheltered carpentry workshop, working with mentally handicapped people.</div>
+            </dd>
+        </div>
+        <div class="experience vevent content-paragraph">
+          <dt class="summary">Socialinformation Marketinggesellschaft mbH Köln</dt>
+            <dd>
+              <div><abbr class="dtstart" title="2002">2002</abbr>&ndash;<abbr class="dtend" title="2003">2003</abbr></div>
+              <div class="description">Sales representative, fund raising in the <span class="adr locality">Ruhr Metropolitan Region</span></div>
+            </dd>
+        </div>
+        <div class="experience vevent content-paragraph">
+          <dt class="summary">SER Quantum GmbH <span class="adr locality">Dortmund</span></dt>
+            <dd>
+              <div><abbr class="dtstart" title="2001">2001</abbr></div>
+              <div class="description">Programmer in Visual Basic for Applications and Microsoft Access</div>
+            </dd>
+        </div>
+        <div class="education vevent content-paragraph">
+          <dt class="summary vcard"><a class="url fn org" href="http://www.tu-dortmund.de/">Technische Universität <span class="adr locality">Dortmund</span></a></dt>
+            <dd>
+              <div><abbr class="dtstart" title="1998">1998</abbr>&ndash;<abbr class="dtend" title="2001">2001</abbr></div>
+              <div class="description">Computer Science, without graduation</div>
+            </dd>
+        </div>
+        <div class="experience vevent content-paragraph">
+          <dt class="summary vcard"><a class="url fn org" href="http://www.helios-kliniken.de/klinik/northeim.html">Albert-Schweitzer-Klinik <span class="adr locality">Northeim</span></a></dt>
+            <dd>
+              <div><abbr class="dtstart" title="1997">1997</abbr>&ndash;<abbr class="dtend" title="1998">1998</abbr></div>
+              <div class="description">Alternative civilian service (Zivildienst)</div>
+            </dd>
+        </div>
+        <div class="experience vevent content-paragraph manual-page-break">
+          <dt class="summary vcard"><a class="url fn org" href="http://www.orgaplan.org/">Orgaplan GmbH <span class="adr locality">Northeim</span></a></dt>
+            <dd>
+              <div><abbr class="dtstart" title="1996">1996</abbr>&ndash;<abbr class="dtend" title="1997">1997</abbr></div>
+              <div class="description">Programmer in COBOL and Visual Basic</div>
+            </dd>
+        </div>
+        <div class="education vevent content-paragraph">
+          <dt class="summary vcard"><a class="url fn org" href="http://www.fachgymnasium.bbs1-northeim.de/">Fachgymnasium Wirtschaft BBS 1 <span class="adr locality">Northeim</span></a></dt>
+            <dd>
+              <div><abbr class="dtstart" title="1994">1994</abbr>&ndash;<abbr class="dtend" title="1997">1997</abbr></div>
+              <div class="description">Abitur</div>
+            </dd>
+        </div>
+      </dl>
+    </div>
+    <div id="who_i_am_looking_for" class="content-section">
+      <h2>who i am looking for</h2>
+      <p>
+      I like people who think out of the box trying to find a <a href="http://garfieldminusgarfield.net/">different</a> perspective.<br />
+      People who like straightforward and simple solutions, who do not imitate <a href="http://www.forbes.com/lists/">others</a> and instead try to understand and extend.
+      </p><p>
+      Your idea of understanding and extending should relate to open source development and <a href="http://github.com/">collaboration platforms</a>.
+      </p><p>
+      You should work on making things <a href="http://37signals.com/">easier</a> to understand and more <a href="http://www.schneier.com/">secure</a> to use. Systems can only be secure if people understand and like to use them. It's a matter of incentives not restrictions.
+      </p><p>
+      You should lead by example, giving each actor freedom to express and extend, be it customers, freelancers or staff. Using technology to force workflows for example is poison, using it to enable people doing what they otherwise could not is the right way to do it.
+      </p><p>
+      I would like to find someone telling me more about <a href="https://www.livemocha.com">communication</a>, be it between people or between man and machines. I believe you can never learn all of it.
+      </p><p>
+      I would also like to work with people who see workflow and security not only as a technical system but as an interdisciplinary field covering all aspects of human interaction.
+      </p>
+    </div>
+    <div id="how_we_team_up" class="content-section">
+      <h2>how we team up</h2>
+      <p>
+        If you think we have common views, I can do what you need and you want to do what I am looking for then please do not be afraid to contact me.<br />
+        I do not care so much about recruiters and social network whores so please do not waste both of our time &mdash; please <em>never</em> call me.
+      </p><p>
+        There are several ways to contact me each of them with their corresponding advantages and disadvantages.<br />
+        Emailing me however will almost always be appropriate, please use the others with prudence.
+      </p>
+      <dl>
+        <dt>Email</dt>
+          <dd><a href="mailto:enno.weichert@gmail.com">enno.weichert@gmail.com</a></dd>
+        <dt>Phone</dt>
+          <dd><a class="tel" href="tel:+49.1578.8476548">+49 1578 8476548</a></dd>
+        <dt>Skype</dt>
+          <dd><a href="skype:enno.weichert?call">enno.weichert</a></dd>
+        <dt>My social networking services</dt>
+          <dd><a href="https://github.com/weichert">GitHub</a></dd>
+      </dl>
+    </div>
+    <div id="meta" class="content-section noprint">
+      <h2>meta</h2>
+      <p>
+        <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">This page is Copyright 2012 Enno Weichert and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons CC BY-NC-ND 3.0 License</a></span>.
+      </p>
+      <p>
+        For a lot of reasons this page is throwing a ton of validation errors I had to publish it though and I promise to make it better.
+      </p>
+      <p>
+        If you want to know more about the internals, here are the technologies I was using to create this page:
+      </p>
+      <dl>
+        <dt><a href="http://www.w3.org/TR/html5/">HTML5</a></dt>
+          <dd>A lot of it is actually HTML 4, but I strife to make it better. And with better I usually mean better semantics and not so much better graphics.</dd>
+        <dt><a href="http://microformats.org/">Microformats</a></dt>
+          <dd>A resume is generally already a heavily structured document where semantic markup seems really appropriate. This was the ugly part, responsible for a lot of validation errors. <a href="http://ufxtract.com/">UfXtract</a> was incredibly helpful here.</dd>
+        <dt><a href="http://www.w3.org/TR/CSS/">CSS3</a></dt>
+          <dd>Because this page relies on semanticization instead of graphical design, any layout and design has to come from Cascading Style Sheets. There are still loopholes however as I am still learning how to do this better.</dd>
+        <dt><a href="http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm">JavaScript</a></dt>
+          <dd>Although my focus in programming right now is on JavaScript I tried to use none of it on this page. It did not work out however: I still need a jQuery scroll script for the static header. But I did not do anything myself here.</dd>
+        <dt><a href="http://jquery.com/">jQuery</a></dt>
+          <dd>I just need it for jScroll.</dd>
+        <dt><a href="http://www.wduffy.co.uk/jScroll/">jScroll by William Duffy</a></dt>
+          <dd>I just need it to have a static offset for my anchors because I use a menu bar on top and this is still not implemented in CSS.</dd>
+        <dt><a href="https://github.com/">GitHub</a></dt>
+          <dd>This is a static site, changes are tracked with Git and it is hosted on GitHub. You can look at the <a href="https://github.com/weichert/weichert.github.com">source code</a> here.</dd>
+        <dt><a href="https://www.google.com/analytics/">Google Analytics</a></dt>
+          <dd>I want to analyze the traffic on this site, without logic on my own server, this is one way to do it. I set it up to not share any data, I do not know to what avail. I will create a public page for the data in time.</dd>
+        <dt><a href="http://www.google.com/webfonts">Google Web Fonts</a></dt>
+          <dd>I am using it to have at least some typographical stability.</dd>
+        <dt><a href="http://inkscape.org/">Inkscape</a></dt>
+          <dd>The workflow is crappy but it gets the job done. I am usually using it just for vector-based icons. The overall goal here however is to get rid of the bitmaps for the most part.</dd>
+        <dt><a href="http://www.sublimetext.com/">Sublime Text 2</a></dt>
+          <dd>This is actually a test-run and it might turn out that I still like Vim. I am usually doing everything else with Vim.</dd>
+        <dt><a href="http://git-scm.com/">Git</a></dt>
+          <dd>I am using git for a lot of other stuff already so it just made a lot of sense</dd>
+        <dt><a href="http://tiswww.case.edu/php/chet/bash/bashtop.html">Bash</a></dt>
+          <dd>Since I am primarily developing on and for Linux machines (servers and Android) I am using the Bash extensively. I am however a bad bash programmer and still amazed by the amount of useful features it has.</dd>
+        <dt><a href="http://kernel.org/">Linux</a></dt>
+          <dd>The list will have to end with Linux: it is my main operating system for years now - on the desktop as well as on servers. You still cannot expect everything to "just run" and there is no working graphical environment (at least none worth mentioning) but it is making it more than up with transparency and maintainability. I do not think I will ever change it.</dd>
+      </dl>
+    </div>
+  </div> <!-- /container -->
+
 </div>
+
+<hr>
+
+<footer>
+  <p>&copy; {{ site.author.name }} 2012
+    with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+    and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+  </p>
+</footer>
