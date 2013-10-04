@@ -1,0 +1,19 @@
+/* Author */
+	Name: Enno Weichert
+	Contact: enno.weichert@gmail.com
+	Twitter: @weichert
+	Location: Germany
+
+/* THANKS */
+
+FIXME: Twitter Bootstrap, jQuery, Jekyll, Jekyll-Bootstrap, jb-gist-blog, FontAwesome
+
+/* SITE */
+
+Last update: YYYY/MM/DD
+Standards: HTML5, CSS3
+IDE: Sublime Text 2, vim, git
+
+/* LICENSE */
+
+FIXME: CC
