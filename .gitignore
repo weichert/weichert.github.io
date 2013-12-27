@@ -10,19 +10,12 @@ $RECYCLE.BIN/
 .LSOverride
 
 ### Linux ###
-.*
-!.gitignore
-!.git*
-*~
 
 ### SublimeText ###
 *.sublime-workspace
 
 ### Vim ###
-.*.s[a-w][a-z]
 *.un~
-Session.vim
-.netrwhist
 *~
 
 ### Ruby Version Manager ###
@@ -35,3 +28,5 @@ _theme_packages/*
 
 ### Git ###
 !.gitkeep
+!.gitignore
+!.git*
