@@ -1,10 +1,37 @@
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+### OS X ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Linux ###
+.*
+!.gitignore
+!.git*
+*~
+
+### SublimeText ###
+*.sublime-workspace
+
+### Vim ###
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+### Ruby Version Manager ###
+.rbenv-version
+.rvmrc
+
+### Jekyll Bootstrap ###
 _site/*
 _theme_packages/*
 
-Thumbs.db
-.DS_Store
-
+### Git ###
 !.gitkeep
-
-.rbenv-version
-.rvmrc
