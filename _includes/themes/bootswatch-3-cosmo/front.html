@@ -13,18 +13,29 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Back to Top</a></li>
-        {% assign pages_list = site.pages %}
-        {% assign group = 'navigation' %}
-        {% include JB/pages_list %}
+        <li><a href="#">Top</a></li>
+        <li><a>&nbsp;</a></li>
+        <li><a href="#">Intro</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- <li><a>&nbsp;</a></li> -->
+        <!-- <li><a href="#">Blog</a></li> -->
+        <!-- {% assign pages_list = site.pages %} -->
+        <!-- {% assign group = 'navigation' %} -->
+        <!-- {% include JB/pages_list %} -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /container -->
 </nav>
 
 <div class="row-fluid">
-  <div id="carousel-front-top" class="carousel slide" data-interval="false" style="padding-top:50px;background-color:#121212;height:100vh">
-
+  <div id="carousel-front-top" class="carousel slide" data-ride="carousel" data-pause="false" style="padding-top:50px;background-color:#121212;height:100vh">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-front-top" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-front-top" data-slide-to="1"></li>
+      <li data-target="#carousel-front-top" data-slide-to="2"></li>
+    </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
@@ -32,15 +43,8 @@
       <div class="item">
       </div>
       <div class="item">
-      </div>
-      <div class="item">
-      </div>
-      <div class="item">
-      </div>
-      <div class="item">
       </div><!-- /item -->
     </div><!-- /carousel-inner -->
-
     <!-- Controls -->
     <a class="left carousel-control" href="#carousel-front-top" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
