@@ -1,4 +1,6 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<a class="sr-only" href="#content">Skip to main content</a>
+<!-- // -->
+<header class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,25 +10,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+      <a class="navbar-brand" href="{{ HOME_PATH }}#">{{ site.title }}</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Top</a></li>
-        <li><a>&nbsp;</a></li>
+    <nav class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-left">
         <li><a href="#">Intro</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
-        <!-- <li><a>&nbsp;</a></li> -->
-        <!-- <li><a href="#">Blog</a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Source</a></li>
         <!-- {% assign pages_list = site.pages %} -->
         <!-- {% assign group = 'navigation' %} -->
         <!-- {% include JB/pages_list %} -->
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </nav>
   </div><!-- /container -->
-</nav>
+</header>
 
 <div class="row-fluid">
   <div id="carousel-front-top" class="carousel slide" data-ride="carousel" data-pause="false" style="padding-top:50px;background-color:#121212;height:100vh">
