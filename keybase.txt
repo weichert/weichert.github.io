@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/weichert
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://weichert.github.io
+  * I am weichert (https://keybase.io/weichert) on keybase.
+  * I have a public key with fingerprint 1E0E 7711 191A F36F 904A  F541 DFC7 FCE9 6735 C685
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "1e0e7711191af36f904af541dfc7fce96735c685",
+            "host": "keybase.io",
+            "key_id": "dfc7fce96735c685",
+            "kid": "01014ed9e3b83561bb240a3c4c1fb2f41d21e59da8726ccc2fa87dd08036f300e6860a",
+            "uid": "9102cf41546be854fbb7b368d44c5919",
+            "username": "weichert"
+        },
+        "service": {
+            "hostname": "weichert.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1433401544,
+    "expire_in": 157680000,
+    "prev": "bdf84b97b73d1bc88d0d821589479ec60d548b262c2d32fb00186fe79a8d9808",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMIdAnicbVJbSBVRFL1qJt0e1I8fUVhDhJXdzpk5M3PmBiVFmZceSlRU0m3OY+4d
+tZnr3NHSKHpABdlHSFH0kKCwoOhFUEFUapFIHxUlRS81QpAoC0x7YGesfqLzc87Z
+e621197s1rFZoXDGw8E4nFLU3ZDRfreoOrTKHXiwVSIuq5WiW6UKPnxZtpPgXsqz
+HV+KSpADrusQQgOalqJZBkCmpSLILKpblBuarqhUw6pUICXddMAQMsRM84jtipj4
+xG0mov/BVwwnAAQQcWZwhWBF1SAhMgKmQhGFFpEtUUmGXDWYiXVZo5TKlngxBjAQ
+bhQAuIY1YAq56mE5AwKZCpaKNMKxiixCdKJomCFEVQMaATDNPcfcxAV6M7dpknu+
+tK1AEtEam/JgBEEn/yAiCdtPVpPfXaU813epWynySd9PpaMB369N/SaQ+B+pOLEd
+JqYpGDXcS9uuI0WhQFLfDrQhUhQEhFNUIPEtKdvjcTtAqLqGgThBHV4jJAmzMCKG
+TnSFQUIxZoBhGarYQLrBqQaYijCRNZnKTJEtAgDEmsV1w8TMwABLQXNVjitFFWHT
+TAjJtJ1wTL/a49K25jtlI0IZ4dDI7MxgH0LhUeP/bolq5gyVjnZBbSxivR7XWbn7
+yL1dk+LTlk9fsvrNT6dnbK8H92fe7P+hPr58aW1Nz4XGU10d15yeweMtWd/OTBr3
+emlx38fp5zaGvuYOhJe8nZX+Umjkze40F99aVPTo5GiW+3hC2ekZUz+mDve9v7iz
+/sbSz4k54eTbiX0VFVWr5THfWtqPDiyOl9adWNZ1fZGC5krOUO2xA8VOrKwhu2PH
+witHyqMg8uHkutLNN7vOXs3PiS3gK57l5gwtCzdVdW4oz4sdyseFrc23OnJLSnrX
+9K9te/ik+/vLvVefzxtze/6awrbuF58iKw/2rHtV927Eq3hj19NY0572+40zUVb9
++vPdz2KTX25/uu8XeM4vZA==
+=WcYw
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/weichert
+
+==================================================================
